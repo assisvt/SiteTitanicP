@@ -1,75 +1,75 @@
 /* Estilo geral */
 body {
     font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
+    margin: 0;  /* Remove a margem padrão ao redor da página */
+    padding: 0; /* Remove o espaçamento interno padrão */
     background: linear-gradient(to bottom, #2c3e50, #bdc3c7);
     color: #fff;
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    line-height: 1.6; /* Define o espaçamento entre linhas */
+    min-height: 100vh; /* Define a altura mínima do corpo como 100% da altura da viewport */
+    display: flex; /* Usa o Flexbox para alinhar elementos internos */
+    flex-direction: column; /* Organiza os filhos do body em coluna */
 }
 
 header {
     background-color: #34495e;
     padding: 10px 0;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra ao cabeçalho para dar profundidade */
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style-type: none; /* Remove os marcadores da lista */
+    margin: 0; 
     padding: 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline; /* Exibe os itens da lista horizontalmente */
     margin-right: 20px;
 }
 
 nav ul li a {
     color: #ecf0f1;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Torna o texto dos links em negrito */
+    transition: color 0.3s; /* Aplica uma transição suave de 0,3s na mudança de cor ao passar o mouse */
 }
 
 nav ul li a:hover {
-    color: #f39c12; /* Ajustado para contraste */
+    color: #f39c12; /* Ao passar o mouse, muda a cor do link para laranja */
 }
 
 main {
     padding: 20px;
     text-align: center;
-    margin: 0 auto;
-    max-width: 800px;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    flex: 1;
+    margin: 0 auto; /* Centraliza o bloco na página */
+    max-width: 800px; /* Define a largura máxima do conteúdo principal */
+    background-color: rgba(255, 255, 255, 0.1); /* Aplica um fundo branco semi-transparente */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);  /* Adiciona uma sombra leve */
+    border-radius: 8px; /* Arredonda os cantos do bloco */
+    flex: 1; /* Permite que o main ocupe o espaço restante no layout flexível */
 }
 
 main h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2.5em; /* Define o tamanho da fonte do título como 2,5 vezes o tamanho padrão */
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior de 20px */
 }
 
 main p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+    font-size: 1.2em; /* Define o tamanho da fonte dos parágrafos como 1,2 vezes o tamanho padrão */
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior de 20px */
 }
 
 button {
-    padding: 10px 20px;
+    padding: 10px 20px;  /* Adiciona espaçamento interno de 10px no topo/baixo e 20px nos lados */
     background-color: #3498db;
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; /* Muda o cursor para o ícone de "mão" ao passar o mouse */
     font-size: 1em;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s; /* Aplica uma transição suave de 0,3s na mudança de cor do fundo */
 }
 
 button:hover {
@@ -83,6 +83,6 @@ footer {
     text-align: center;
     margin-top: 20px;
     position: relative;
-    width: 100%;
-    bottom: 0;
+    width: 100%; /* Define a largura do rodapé como 100% da tela */
+    bottom: 0; /* Mantém o rodapé fixo na parte inferior da página */
 }
