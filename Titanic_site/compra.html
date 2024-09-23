@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Compra</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function redirecionarParaConfirmacao(event) {
+            event.preventDefault(); // Evita o comportamento padrão do formulário
+            window.location.href = "confirmacao.html"; // Redireciona para a página de confirmação
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="compra.html">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulário de Compra</h1>
+        <form onsubmit="redirecionarParaConfirmacao(event)">
+            <label for="pagamento">Meio de Pagamento:</label>
+            <select id="pagamento" name="pagamento">
+                <option value="cartao">Cartão de Crédito</option>
+                <option value="boleto">Boleto Bancário</option>
+                <option value="pix">PIX</option>
+            </select>
+
+            <label for="produto">Produto:</label>
+            <select id="produto" name="produto">
+                <option value="classeA">Ticket Classe A</option>
+                <option value="classeB">Ticket Classe B</option>
+                <option value="classeC">Ticket Classe C</option>
+            </select>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" required>
+
+            <button type="submit">Comprar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Contato: contato@bilheteriadoTitanic.com | Telefone: (21) 1234-5678</p>
+    </footer>
+</body>
+</html>
